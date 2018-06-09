@@ -36,7 +36,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
-      <HintPath>..\BaldiReferences\BALDI_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\UnityReferences\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\UnityReferences\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\UnityReferences\UnityEngine.CoreModule.dll</HintPath>
@@ -55,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\AssetLoaderComponent.cs" />
     <Compile Include="Components\BaldiAngerControllerComponent.cs" />
     <Compile Include="Components\GodModeComponent.cs" />
     <Compile Include="Components\GUIComponent.cs" />

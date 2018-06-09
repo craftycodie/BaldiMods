@@ -45,7 +45,8 @@ namespace BaldiMods
             sceneObject.AddComponent<GodModeComponent>();
             sceneObject.AddComponent<PlayerControllerOverrideComponent>();
             sceneObject.AddComponent<BaldiAngerControllerComponent>();
-            sceneObject.AddComponent<PlaytimeDupeComponent>();
+            //sceneObject.AddComponent<PlaytimeDupeComponent>();
+            sceneObject.AddComponent<AssetLoaderComponent>();
         }
     }
 }
