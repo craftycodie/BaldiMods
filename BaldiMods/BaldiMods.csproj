@@ -63,6 +63,8 @@
     <Compile Include="Components\GodModeComponent.cs" />
     <Compile Include="Components\GUIComponent.cs" />
     <Compile Include="Components\PlayerControllerOverrideComponent.cs" />
+    <Compile Include="Components\GottaSweepDupeComponent.cs" />
+    <Compile Include="Components\PrincipleOfTheThingDupeComponent.cs" />
     <Compile Include="Components\PlaytimeDupeComponent.cs" />
     <Compile Include="Hooks\StartButton.cs" />
     <Compile Include="ComponentFactory.cs" />
