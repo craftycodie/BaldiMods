@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.DontDestroyOnLoad, false)]
     class BaldiAngerControllerComponent : MonoBehaviour
     {
         void Update()

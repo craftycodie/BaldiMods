@@ -7,6 +7,7 @@ using UnityEngine;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.RecreateOnSceneChange, false)]
     class AssetLoaderComponent : MonoBehaviour
     {
         public void Start()

@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.DontDestroyOnLoad, false)]
     class GUIComponent : MonoBehaviour
     {
         public void OnGUI()

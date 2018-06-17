@@ -8,10 +8,14 @@ namespace BaldiMods
 {
     public static class ModController
     {
+        public static UnityAction update;
+        public static UnityAction lateUpdate;
+        public static UnityAction fixedUpdate;
+
         private static bool gameInitialized = false;
         private static void GameInitialized()
         {
-            ComponentFactory.CreateFactory();
+            ComponentFactory.CreateFactoryComponent();
         }
 
         public static void MainMenuStart()

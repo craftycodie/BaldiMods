@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.RecreateOnSceneChange, false)]
     public class PlayerControllerOverrideComponent : MonoBehaviour
     {
         bool enableOverride = false;
@@ -21,6 +22,8 @@ namespace BaldiMods.Components
             ps = FindObjectOfType<PlayerScript>();
             rb = ps.gameObject.GetComponent<Rigidbody>();
             cs = FindObjectOfType<CameraScript>();
+            ps.runSpeed = ps.runSpeed * 2;
+            ps.walkSpeed = ps.walkSpeed * 3;
         }
 
         void Update()

@@ -4,19 +4,11 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace BaldiMods.Player
+namespace BaldiMods.Overrides
 {
+    [OverrideComponent(typeof(PlayerControllerOverride), typeof(PlayerScript))]
     public class PlayerControllerOverride : MonoBehaviour
     {
-        static void ActiveSceneChanged(Scene current, Scene next)
-        {
-            //Check for player.
-            PlayerScript ps = UnityEngine.Object.FindObjectOfType<PlayerScript>();
-            if (!ps) return;
-
-            ps.gameObject.AddComponent<PlayerControllerOverride>();
-        }
-
         bool enableOverride = false;
 
         Rigidbody rb;

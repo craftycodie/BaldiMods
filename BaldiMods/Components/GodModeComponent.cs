@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.RecreateOnSceneChange, false)]
     public class GodModeComponent : MonoBehaviour
     {
         GameControllerScript gc;

@@ -6,6 +6,7 @@ using UnityEngine;
 
 namespace BaldiMods.Components
 {
+    [ModComponent(ModComponentType.RecreateOnSceneChange, true)]
     class PlaytimeDupeComponent : MonoBehaviour
     {
         void Start()
