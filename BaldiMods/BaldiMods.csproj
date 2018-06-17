@@ -32,29 +32,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>..\BaldiReferences\BALDI_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\BaldiLibs\BALDI_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="UnityEngine">
-      <HintPath>..\UnityReferences\UnityEngine.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>..\UnityReferences\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\UnityReferences\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UnityReferences\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UnityReferences\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\UnityReferences\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>..\UnityLibs\UnityEngine.UIModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -72,10 +72,12 @@
     <Compile Include="Hooks\StartButton.cs" />
     <Compile Include="ComponentFactory.cs" />
     <Compile Include="ModController.cs" />
-    <Compile Include="Player\PlayerControllerOverride.cs" />
+    <Compile Include="Overrides\OverrideComponentAttribute.cs" />
+    <Compile Include="Overrides\PlayerControllerOverride.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Player\" />
     <Folder Include="Types\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

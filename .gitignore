@@ -327,8 +327,8 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
-BaldiReferences/
+BaldiLibs/
 
-UnityReferences/
+UnityLibs/
 
 Baldi/BALDI_Data/Managed/BaldiMods\.dll
